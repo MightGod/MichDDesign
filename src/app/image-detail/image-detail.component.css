@@ -1,0 +1,105 @@
+
+/* Mobile Screen */
+@media (max-width: 400px) 
+{
+  #buttonNext, #buttonPrevious
+  {
+    display: none;
+  }
+}
+
+/* Desktop Screen */
+@media (min-width: 400px) 
+{
+  #buttonNext, #buttonPrevious
+  {
+    display: inline;
+  }
+}
+
+span
+{
+  display: block;
+}
+
+.category
+{
+  font-size: 40px;
+  color: #44C2BC;
+}
+
+.desc
+{
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul 
+{
+    max-width: 800px;
+    width: 100%; 
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li
+{
+    cursor: pointer;
+    display: inline;
+}
+
+img
+{
+  width: 100%;
+  margin: 6px 6px 6px 6px;
+}
+
+iframe
+{
+  margin: 6px 6px 6px 6px;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  color: #91D6D3;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.4s ease;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  margin-right: 21%;
+}
+
+.prev
+{
+  left: 0;
+  margin-left: 21.7%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+  background-color: #91D6D3;
+  color: white;
+}
+
+.prev:disabled, .next:disabled
+{
+  background-color: #e0e0d1;
+  color: #ccccb3;
+}

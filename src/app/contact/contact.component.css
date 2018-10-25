@@ -1,0 +1,31 @@
+a
+{
+    color: gray;
+    font-size: 20px;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.3em;
+    font-family: "open sans", sans-serif;
+    text-decoration: none;
+}
+
+i
+{
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+a:hover
+{
+    color: darkslategrey;
+}
+
+a:active
+{
+    color: black;
+}

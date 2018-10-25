@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>
+  <div>
+    <nav>
+      <table class="fullWidth">
+        <tr>
+          <td style="width: 50%;">
+            <div class="cellLeft">
+              <a routerLink="/home" id="{{engFlag ? 'engTitle' : 'hebTitle'}}" translate>Michal Davidi</a>
+            </div>
+          </td>
+          <td style="width: 45%;">
+
+            <div class="cellRight" id="mobileNav">
+              <a routerLink="/home"><i class="fa fa-home"></i></a>
+              <a routerLink="/about"><i class="fa fa-user"></i></a>
+              <a routerLink="/contact"><i class="fa fa-phone"></i></a>
+            </div>
+
+            <div class="cellRight" id="desktopNav">
+              <a routerLink="/home" translate>Home</a>
+              <a routerLink="/about" translate>About</a>
+              <a routerLink="/contact" translate>Contact</a>
+
+            </div>
+          </td>
+          <td style="width: 5%;">
+            <div *ngIf="!engFlag" class="cellRight">
+              <input (click)="switchLanguage('eng')" type="image" title="English" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" width="45px">
+            </div>
+            <div *ngIf="engFlag" class="cellRight">
+              <input (click)="switchLanguage('heb')" type="image" title="עברית" src="https://lipis.github.io/flag-icon-css/flags/4x3/il.svg" width="45px">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </div>
+</header>
+<div style="height: 17px;"></div>
+<router-outlet></router-outlet>

@@ -1,0 +1,18 @@
+<section>  
+  <a *ngFor="let image of menu" [routerLink]="['/category', image.category]">
+    <div id="container">
+
+      <!-- Shadow when hover an image -->
+      <div id="content-overlay"></div>
+
+      <!-- Image of each category -->
+      <img src="{{image.url}}">
+
+      <!-- Title of category when hover its image -->
+      <div id="content-details" class="fadeIn-top">
+          <h3 translate>{{image.category}}</h3>
+      </div>
+
+    </div>
+  </a>
+</section>

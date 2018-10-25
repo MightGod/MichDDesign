@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+  <span class="category" translate>{{category}}</span>
+  <span class="desc" translate>{{category}}Description</span>
+</div>
+<div>
+    <button id="buttonNext" class="next" title="{{next == '' ? 'Disabled' : 'Next to ' + next}}" (click)="changePicture(next)" [disabled]="next == ''"><i class="fa fa-angle-double-right"></i></button>
+    <button id="buttonPrevious" class="prev" title="{{previous == '' ? 'Disabled' : 'Back to ' + previous}}" (click)="changePicture(previous)" [disabled]="previous == ''"><i class="fa fa-angle-double-left"></i></button>
+    <div>
+      <ul id="category">
+          <li *ngFor="let image of images">
+            <img src="{{image.url}}" (swipeleft)="changePicture(next)" (swiperight)="changePicture(previous)">
+          </li>
+          <li *ngIf="category === 'app'">
+              <iframe [src]='youtube' height="550" frameborder="0" allowfullscreen></iframe>
+          </li>
+      </ul>
+    </div>
+</div>

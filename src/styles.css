@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face 
+{
+  font-family: almoni-dl-aaa-300;
+  src: url(assets/fonts/almoni-dl-aaa-300.ttf) format("opentype");
+}
+
+@font-face 
+{
+  font-family: arian-lt-w20-light;
+  src: url(assets/fonts/arian-lt-w20-light.ttf) format("opentype");
+}
